@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng nhập + 2FA</title>
+  </head>
+  <body>
+    <h1>Form đăng nhập + 2FA</h1>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div>
+        <label for="lbl-email">Email:</label>
+        <input type="email" name="email" id="lbl-email" />
+      </div>
+      <div>
+        <label for="lbl-password">Mật khẩu</label>
+        <input type="password" name="password" id="lbl-password" />
+      </div>
+      <div>
+        <label for="lbl-otp-code">Mã OTP</label>
+        <input type="number" name="otp-code" id="lbl-otp-code" />
+      </div>
+      <button type="submit">Đăng nhập</button>
+      <button type="reset">Huỷ</button>
+    </form>
+  </body>
+</html>

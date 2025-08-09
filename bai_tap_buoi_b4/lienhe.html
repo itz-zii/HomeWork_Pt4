@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form liên hệ nhiều bước</title>
+  </head>
+  <body>
+    <h1>Form liên hệ nhiều bước</h1>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        <div>
+          <label for="lbl-fullname">Họ và tên:</label>
+          <input type="text" name="fullname" id="lbl-fullname" />
+        </div>
+        <div>
+          <label for="lbl-email">Email:</label>
+          <input type="email" name="email" id="lbl-email" />
+        </div>
+        <div>
+          <label for="lbl-phone">Số điện thoại:</label>
+          <input type="number" name="phone" id="lbl-phone" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Thông tin yêu cầu</legend>
+        <div>
+          <label for="lbl-request">Loại yêu cầu</label>
+          <select name="request" id="lbl-request">
+            <option vaule="0">Hỗ trợ kỹ thuật</option>
+          </select>
+          <div>
+            <label for="message">Mô tả:</label>
+            <br />
+            <textarea name="messages" id="messages"> </textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Thông tin bổ sung</legend>
+        <div>
+            <input type="checkbox" name="email" value="email" />Nhận email khuyến mãi</label>
+        </div>
+        <div>
+            <label>Cách liên hệ:</label>
+            <label>
+            <input type="radio" name="contact" value="email" /> Email
+        </label>
+
+        <label>
+            <input type="radio" name="contact" value="phone" /> Số điện thoại
+        </label>
+            </div>
+        </fieldset>
+            <button type="submit">Gửi thông tin</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Login</title>
+    <style>
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 25px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+    <table border="0" width="25%" cellpadding="10" cellspacing="0">
+        <tr>
+            <th colspan="2">
+    <h1>Novell Service Login</h1>
+            </th>
+        </tr>
+       <tr>
+        <td>
+        <label for="lbl-fullname">Username:</label>
+        <td>
+        <input type="text" name="fullname" id="lbl-fullname" />
+        </td>
+        </tr>
+        <tr>
+            <td><label for="lbl-password">Mật khẩu</label></td>
+            <td><input type="password" name="password" id="lbl-password" /></td>
+        </tr>
+        <tr>
+            <td>
+            <label for="city-of-employment">City of employment:</label>
+            </td>
+            <td>
+            <input type="text" name="city" id="city-of-employment" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="web-sever">Web sever:</label>
+            </td>
+            <td>
+                <select name="request" id="web-sever">
+                <option vaule="0">--Choose a sever--</option>
+                <option vaule="1">Sever 1</option>
+                <option vaule="2">Sever 2</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="role">Please specify your role: </label>
+            </td>
+            <td>
+                <label for="admin"> <input type="radio" name="role" id="admin"> Admin </label>
+            <br />
+                <label for="egineer"> <input type="radio" name="role" id="egineer"> Egineer</label> 
+            <br />
+                <label for="manager"> <input type="radio" name="role" id="manager"> Manager</label> 
+            <br />
+                <label for="guest"> <input type="radio" name="role" id="guest"> Guest</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="single-sigh-on">Single sigh on to the following:</label>
+            </td>
+            <td>
+                <label for="mail">
+                <input type="checkbox" name="mail" id="mail" /> Mail <br />
+            <label for="payroll">
+                <input type="checkbox" name="payroll" id="payroll" /> payroll <br />
+            <label for="self-service">
+                <input type="checkbox" name="self-service" id="self-service" /> Self-service <br />
+            </td>
+        </tr>
+            <th colspan="2">
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </th>
+        </table>
+    </form>
+  </body>
+</html>

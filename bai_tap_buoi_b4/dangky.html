@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đăng ký tài khoản</title>
+  </head>
+  <body>
+    <h1>Form đăng ký tài khoản</h1>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div>
+        <label for="lbl-fullname">Họ và tên:</label>
+        <input type="text" name="fullname" id="lbl-fullname" />
+      </div>
+      <div>
+        <label for="lbl-email">Email:</label>
+        <input type="email" name="email" id="lbl-email" />
+      </div>
+      <div>
+        <label for="lbl-password">Mật khẩu</label>
+        <input type="password" name="password" id="lbl-password" />
+      </div>
+      <div>
+        <label for="lbl-birtday">Ngày sinh:</label>
+        <input type="date" name="birtday" id="lbl-birtday" placeholder="date" />
+      </div>
+      <div>
+        <label>Giới tính:</label>
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            id="lbl-radio"
+            value="male"
+          />Nam</label
+        >
+
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            id="lbl-radio"
+            value="female"
+          />Nữ</label
+        >
+
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            id="lbl-radio"
+            value="unknow"
+          />Khác</label
+        >
+      </div>
+      <div>
+        <label>Sở thích:</label>
+        <label>
+          <input type="checkbox" name="sothich" value="readbook" />Đọc
+          sách</label
+        >
+        <label>
+          <input type="checkbox" name="sothich" value="tourism" />Du lịch</label
+        >
+        <label>
+          <input type="checkbox" name="sothich" value="sport" />Thể thao</label
+        >
+      </div>
+      <div>
+        <label for="message">Mô tả bản thân:</label>
+        <br />
+        <textarea name="messages" id="messages"> </textarea>
+      </div>
+      <button type="submit">Đăng ký</button>
+      <button type="reset">Xoá</button>
+    </form>
+  </body>
+</html>

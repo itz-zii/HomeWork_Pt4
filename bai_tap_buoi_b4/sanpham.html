@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt hàng sản phẩm</title>
+  </head>
+  <body>
+    <h1>Form đặt hàng sản phẩm</h1>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <fieldset>
+        <legend>Thông tin đơn hàng</legend>
+        <div>
+          <label for="iPhone">Tên sản phẩm:</label>
+          <select name="iPhone" id="iPhone">
+            <option value="0">iPhone 15</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="quantity">Số lượng:</label>
+          <input type="number" name="quantity" id="quantity" />
+        </div>
+
+        <div>
+          <label for="File">Upload ảnh thanh toán:</label>
+          <input type="file" name="File" id="File" />
+        </div>
+      </fieldset>
+      <button type="submit">Đặt hàng</button>
+    </form>
+  </body>
+</html>
